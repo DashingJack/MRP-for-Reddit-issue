@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bn4fhbiss71xi"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(60, 20, 60, -20, -60, -20, -60, 20)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PackedVector2Array(60, 20, 60, -20, -60, -20, -60, 20)

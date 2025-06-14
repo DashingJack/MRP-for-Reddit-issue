@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://2yyw8gb78tl0"]
+
+[ext_resource type="Script" path="res://Node2D.gd" id="1_2pqhn"]
+[ext_resource type="PackedScene" uid="uid://bn4fhbiss71xi" path="res://animatable_body_2d.tscn" id="2_lg7c6"]
+[ext_resource type="PackedScene" uid="uid://bkistowo1y4nn" path="res://character_body_2d.tscn" id="2_pufac"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(578, 357)
+script = ExtResource("1_2pqhn")
+
+[node name="AnimatableBody2D" parent="." instance=ExtResource("2_lg7c6")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_pufac")]
+position = Vector2(-23, -56)
